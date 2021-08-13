@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/scoot/static/js/main.32ac2e8a.chunk.js",
-    "main.js.map": "/scoot/static/js/main.32ac2e8a.chunk.js.map",
+    "main.js": "/scoot/static/js/main.0b8f4e84.chunk.js",
+    "main.js.map": "/scoot/static/js/main.0b8f4e84.chunk.js.map",
     "runtime-main.js": "/scoot/static/js/runtime-main.32bc71da.js",
     "runtime-main.js.map": "/scoot/static/js/runtime-main.32bc71da.js.map",
     "static/js/2.a784d1ac.chunk.js": "/scoot/static/js/2.a784d1ac.chunk.js",
@@ -46,6 +46,6 @@
   "entrypoints": [
     "static/js/runtime-main.32bc71da.js",
     "static/js/2.a784d1ac.chunk.js",
-    "static/js/main.32ac2e8a.chunk.js"
+    "static/js/main.0b8f4e84.chunk.js"
   ]
 }
