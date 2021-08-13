@@ -53,13 +53,13 @@ const Footer = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/scoot/about">About</Link>
             </li>
             <li>
-              <Link to="/locations">Locations</Link>
+              <Link to="/scoot/locations">Locations</Link>
             </li>
             <li>
-              <Link to="/careers">Careers</Link>
+              <Link to="/scoot/careers">Careers</Link>
             </li>
           </ul>
           <div className="social-media">

@@ -31,31 +31,31 @@ const Nav = () => {
           src={navActive ? close : burger}
           alt="nav-menu"
         />
-        <Link to="/">
+        <Link to="/scoot">
           <img id="logo" src={logo} alt="logo" />
         </Link>
         <nav className={`${navActive ? "active" : ""}`}>
           <ul>
             <li>
               <Link
-                to="/about"
-                style={pathname === "/about" ? { color: "#fcb72b" } : {}}
+                to="/scoot/about"
+                style={pathname === "/scoot/about" ? { color: "#fcb72b" } : {}}
               >
                 About
               </Link>
             </li>
             <li>
               <Link
-                to="/locations"
-                style={pathname === "/locations" ? { color: "#fcb72b" } : {}}
+                to="/scoot/locations"
+                style={pathname === "/scoot/locations" ? { color: "#fcb72b" } : {}}
               >
                 Locations
               </Link>
             </li>
             <li>
               <Link
-                to="/careers"
-                style={pathname === "/careers" ? { color: "#fcb72b" } : {}}
+                to="/scoot/careers"
+                style={pathname === "/scoot/careers" ? { color: "#fcb72b" } : {}}
               >
                 Careers
               </Link>

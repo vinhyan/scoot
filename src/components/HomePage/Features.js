@@ -34,7 +34,7 @@ const Features = () => {
           button={true}
           buttonContent="Learn More"
           isReverse={true}
-          link="/about"
+          link="/scoot/about"
         />
         <img className="circle" src={circle} alt="circle" />
         <img className="arrow" src={leftDownArrow} alt="arrow" />
@@ -50,7 +50,7 @@ const Features = () => {
           button={true}
           buttonContent="Learn More"
           isReverse={false}
-          link="/locations"
+          link="/scoot/locations"
         />
         <img className="circle2" src={circle} alt="circle" />
         <img className="arrow2" src={rightArrow} alt="arrow" />
@@ -66,7 +66,7 @@ const Features = () => {
           button={true}
           buttonContent="Learn More"
           isReverse={true}
-          link="/about"
+          link="/scoot/about"
         />
         <img className="circle" src={circle} alt="circle" />
         <img className="arrow3" src={leftDownArrow} alt="arrow" />
