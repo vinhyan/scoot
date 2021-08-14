@@ -10,14 +10,22 @@ import logoLight from "../logo-light.svg";
 
 const Footer = () => {
   return (
-    <StyledFooter>
+    <StyledFooter role="contentinfo">
       <div className="call-to-action">
         <h2>Sign up and Scoot off today</h2>
         <div className="app-download">
-          <a className="app-store" href="https://www.apple.com/ca/app-store/">
+          <a
+            className="app-store"
+            href="https://www.apple.com/ca/app-store/"
+            aria-label="Visit AppStore"
+          >
             <img src={appStore} alt="app-store" />
           </a>
-          <a className="google-play" href="https://play.google.com/store">
+          <a
+            className="google-play"
+            href="https://play.google.com/store"
+            aria-label="Visit Google Play"
+          >
             <img src={googlePlay} alt="google-play" />
           </a>
         </div>
@@ -48,9 +56,9 @@ const Footer = () => {
       </div>
       <StyledNav>
         <Link to="/">
-          <img id="logo" src={logoLight} alt="logo" />
+          <img id="logo-light" src={logoLight} alt="logo" />
         </Link>
-        <nav>
+        <nav role="navigation" aria-labelledby="secondary">
           <ul>
             <li>
               <Link to="/scoot/about">About</Link>
@@ -63,7 +71,10 @@ const Footer = () => {
             </li>
           </ul>
           <div className="social-media">
-            <a href="https://www.facebook.com/">
+            <a
+              href="https://www.facebook.com/"
+              aria-label="Navigate to Facebook"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path
                   fill="#FCB72B"
@@ -71,7 +82,7 @@ const Footer = () => {
                 />
               </svg>
             </a>
-            <a href="https://twitter.com/">
+            <a href="https://twitter.com/" aria-label="Navigate to Twitter">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
                 <path
                   fill="#FCB72B"
@@ -79,7 +90,10 @@ const Footer = () => {
                 />
               </svg>
             </a>
-            <a href="https://www.instagram.com/">
+            <a
+              href="https://www.instagram.com/"
+              aria-label="Navigate to Instagram"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path
                   fill="#FCB72B"
@@ -93,7 +107,7 @@ const Footer = () => {
     </StyledFooter>
   );
 };
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
   min-height: 396px;
   background-color: #495567;
   overflow-x: hidden;
@@ -188,7 +202,7 @@ const StyledNav = styled.div`
   position: relative;
   background-color: #333a44;
 
-  #logo {
+  #logo-light {
     display: block;
     flex-basis: 108px;
   }

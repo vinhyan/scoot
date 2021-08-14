@@ -88,7 +88,7 @@ const Intro = () => {
         <motion.div variants={SlideInLeft} className="spotlight">
           <img src={locate} alt="locate" />
           <div className="detail">
-            <h4>Locate with app</h4>
+            <h2>Locate with app</h2>
             <p>
               Use the app to find the nearest scooter to you. We are
               continuously placing scooters in the areas with most demand, so
@@ -99,7 +99,7 @@ const Intro = () => {
         <motion.div variants={SlideInLeft} className="spotlight">
           <img src={scooter} alt="scooter" />
           <div className="detail">
-            <h4>Pick your scooter</h4>
+            <h2>Pick your scooter</h2>
             <p>
               We show the most important info for the scooters closest to you.
               So you know how much charge they have left and can see roughly how
@@ -110,7 +110,7 @@ const Intro = () => {
         <motion.div variants={SlideInLeft} className="spotlight">
           <img src={ride} alt="ride" />
           <div className="detail">
-            <h4>Enjoy the ride</h4>
+            <h2>Enjoy the ride</h2>
             <p>
               Scan the QR code and the bike will unlock. Retract the cable lock,
               put on a helmet, and you’re off! Always lock bikes away from
@@ -307,7 +307,10 @@ const FunctionSpotlights = styled(motion.div)`
     z-index: 1;
 
     .detail {
-      h4 {
+      h2 {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07px;
         padding: 40px 0 27px 0;
       }
     }
@@ -367,7 +370,7 @@ const FunctionSpotlights = styled(motion.div)`
         text-align: center;
         flex: 1;
 
-        h4 {
+        h2 {
           font-size: 20px;
         }
       }

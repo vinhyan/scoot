@@ -16,20 +16,22 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <Switch>
-        <Route path="/scoot" exact>
-          <Home />
-        </Route>
-        <Route path="/scoot/about">
-          <About />
-        </Route>
-        <Route path="/scoot/locations">
-          <Locations />
-        </Route>
-        <Route path="/scoot/careers">
-          <Careers />
-        </Route>
-      </Switch>
+      <main role="main">
+        <Switch>
+          <Route path="/scoot" exact>
+            <Home />
+          </Route>
+          <Route path="/scoot/about">
+            <About />
+          </Route>
+          <Route path="/scoot/locations">
+            <Locations />
+          </Route>
+          <Route path="/scoot/careers">
+            <Careers />
+          </Route>
+        </Switch>
+      </main>
       <Footer />
       <ScrollTop />
     </div>

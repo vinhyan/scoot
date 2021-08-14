@@ -34,7 +34,11 @@ const Nav = () => {
         <Link to="/scoot">
           <img id="logo" src={logo} alt="logo" />
         </Link>
-        <nav className={`${navActive ? "active" : ""}`}>
+        <nav
+          className={`${navActive ? "active" : ""}`}
+          role="navigation"
+          aria-labelledby="primary"
+        >
           <ul>
             <li>
               <Link
@@ -47,7 +51,9 @@ const Nav = () => {
             <li>
               <Link
                 to="/scoot/locations"
-                style={pathname === "/scoot/locations" ? { color: "#fcb72b" } : {}}
+                style={
+                  pathname === "/scoot/locations" ? { color: "#fcb72b" } : {}
+                }
               >
                 Locations
               </Link>
@@ -55,7 +61,9 @@ const Nav = () => {
             <li>
               <Link
                 to="/scoot/careers"
-                style={pathname === "/scoot/careers" ? { color: "#fcb72b" } : {}}
+                style={
+                  pathname === "/scoot/careers" ? { color: "#fcb72b" } : {}
+                }
               >
                 Careers
               </Link>
@@ -76,7 +84,7 @@ const Nav = () => {
   );
 };
 
-const StyledNav = styled.div`
+const StyledNav = styled.header`
   min-height: 96px;
   padding: 22px 165px;
   z-index: 4;
