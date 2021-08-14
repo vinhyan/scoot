@@ -100,7 +100,7 @@ const Card = ({
 
 4. Accessibility:
 
-- Use specific tags or add landmarks such as `role`, `aria-labelledby` and `aria-label` to the tags throgughout the project for accessibility.
+- Use specific tags or add landmarks such as `role`, `aria-labelledby` and `aria-label` to the tags throughout the project for accessibility.
 
 ### Continued development
 
