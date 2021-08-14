@@ -58,7 +58,7 @@ const Footer = () => {
         <Link to="/">
           <img id="logo-light" src={logoLight} alt="logo" />
         </Link>
-        <nav aria-labelledby="secondary">
+        <div className="nav" role="navigation">
           <ul>
             <li>
               <Link to="/scoot/about">About</Link>
@@ -102,7 +102,7 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-        </nav>
+        </div>
       </StyledNav>
     </StyledFooter>
   );
@@ -207,7 +207,7 @@ const StyledNav = styled.div`
     flex-basis: 108px;
   }
 
-  nav {
+  .nav {
     display: flex;
     align-items: center;
     flex: 1;
@@ -254,7 +254,7 @@ const StyledNav = styled.div`
     flex-direction: column;
     padding: 63px 0 89px 0;
 
-    nav {
+    .nav {
       flex-direction: column;
       padding: 0;
       ul {

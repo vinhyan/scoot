@@ -34,7 +34,7 @@ const Nav = () => {
         <Link to="/scoot">
           <img id="logo" src={logo} alt="logo" />
         </Link>
-        <nav className={`${navActive ? "active" : ""}`} aria-labelledby="primary" >
+        <nav className={`${navActive ? "active" : ""}`}>
           <ul>
             <li>
               <Link
