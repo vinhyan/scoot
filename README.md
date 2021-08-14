@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# Frontend Mentor - Scoot website solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Scoot website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/scoot-multipage-website-N76alNPRJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Overview
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### The challenge
 
-### `npm test`
+Users should be able to:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Desktop](./reference/Scoot-Desktop.png)
+![Tablet](./reference/Scoot-Tablet.png)
+![Mobile](./reference/Scoot-Mobile.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Links
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Solution URL](https://github.com/vinhyan/scoot.git)
+- [Live Site URL](https://vinhyan.github.io/scoot/)
 
-### `npm run eject`
+## My process
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Built with
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- [React](https://reactjs.org/) - JS library
+- [Styled Components](https://styled-components.com/) - For styles
+- [Framer Motion](https://www.framer.com/motion/) - For animations
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### What I learned
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. How to style a React project using Styled Components:
 
-## Learn More
+- Learned how to create global style using `{ createGlobalStyle }`.
+- Learned how to use props to manipulate styles within styled components -> this is my one of my favourtie features of Styled Components.
+- For responsiveness: media query has to be added separately to each styled component -> can be bit of work but I got used to it easily.
+- Learned how to work with Framer Motion using Styled Components.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Create reusable components with React:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- I like creating components that can be reused throughout the project. Passing data through props without having to re-write HTML tags and classes saved me lots of time.
+- Below is a reusable component which elements' position can be reversed (for styling purposes) by passing props:
 
-### Code Splitting
+```
+const Card = ({
+  title,
+  content,
+  buttonContent,
+  featureImg,
+  button,
+  isReverse,
+  link,
+}) => {
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+  return (
+    <StyledCard >
+      <div className={`feature ${isReverse ? "reverse" : ""}`}>
+        <img className="feature-img" src={featureImg} alt={title} />
+        <div className="description">
+          <h2>{title}</h2>
+          <p>{content}</p>
+          {button ? (
+            <Link className="button" to={link}>
+              {buttonContent}
+            </Link>
+          ) : (
+            ""
+          )}
+        </div>
+      </div>
+    </StyledCard>
+  );
+};
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Learned how to use Framer Motion for animations:
 
-### Making a Progressive Web App
+- Second time using Framer Motion, I applied a couple simple animmations for when pages rendering or when scrolling
+- For when scrolling:
+  - I used `{ useInView }` from `react-intersection-observer` to get the view of the element on the page, and use `{ useAnimation }` to add animation if the element's view is `true` or remove animation when it is `false`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Accessibility:
 
-### Advanced Configuration
+- Use specific tags or add landmarks, aria-labelledby and aria-label to the tags throgughout the project to help with all screen readers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Continued development
 
-### Deployment
+- Learned how to break down the project into small reusable components more effienctly
+- Explore more features of Styled Components
+- Learned how to use AnimateSharedLayout from Framer Motion (I initially added this to FAQ section, however it did not work the way I wanted)
+- Be more aware of accessibility issues and HTML validations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Author
 
-### `npm run build` fails to minify
+- LinkedIn - [Vinh Nhan](https://www.linkedin.com/in/vinhnhan126/)
+- Twitter - [Vinh Nhan](https://twitter.com/vinhnhan9)
+- Frontend Mentor - [@vinhyan](https://www.frontendmentor.io/profile/vinhyan)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
