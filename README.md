@@ -104,9 +104,9 @@ const Card = ({
 
 ### Continued development
 
-- Learned how to break down the project into small reusable components more efficiently
+- Learn how to break down the project into small reusable components more efficiently
 - Explore more features of Styled Components
-- Learned how to use AnimateSharedLayout from Framer Motion (I initially added this to FAQ section, however it did not work the way I wanted)
+- Learn how to use AnimateSharedLayout from Framer Motion (I initially added this to FAQ section, however it did not work the way I wanted)
 - Be more aware of accessibility issues and HTML validations
 
 ## Author
