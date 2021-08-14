@@ -14,7 +14,6 @@ This is a solution to the [Scoot website challenge on Frontend Mentor](https://w
   - [Continued development](#continued-development)
 - [Author](#author)
 
-
 ## Overview
 
 ### The challenge
@@ -52,7 +51,7 @@ Users should be able to:
 
 - Learned how to create global style using `{ createGlobalStyle }`.
 - Learned how to use props to manipulate styles within styled components -> this is my one of my favourtie features of Styled Components.
-- For responsiveness: media query has to be added separately to each styled component -> can be bit of work but I got used to it easily.
+- For responsiveness: media query has to be added separately to each styled component -> can be a bit of work but I got used to it easily.
 - Learned how to work with Framer Motion using Styled Components.
 
 2. Create reusable components with React:
@@ -97,7 +96,7 @@ const Card = ({
 
 - Second time using Framer Motion, I applied a couple simple animmations for when pages rendering or when scrolling
 - For when scrolling:
-  - I used `{ useInView }` from `react-intersection-observer` to get the view of the element on the page, and use `{ useAnimation }` to add animation if the element's view is `true` or remove animation when it is `false`
+  - I used `{ useInView }` from `react-intersection-observer` to get the view of the element on the page, and used `{ useAnimation }` to add animation if the element's view is `true` or remove animation when it is `false`
 
 4. Accessibility:
 
@@ -105,14 +104,13 @@ const Card = ({
 
 ### Continued development
 
-- Learned how to break down the project into small reusable components more effienctly
+- Learned how to break down the project into small reusable components more efficiently
 - Explore more features of Styled Components
 - Learned how to use AnimateSharedLayout from Framer Motion (I initially added this to FAQ section, however it did not work the way I wanted)
 - Be more aware of accessibility issues and HTML validations
 
 ## Author
 
-- LinkedIn - [Vinh Nhan](https://www.linkedin.com/in/vinhnhan126/)
-- Twitter - [Vinh Nhan](https://twitter.com/vinhnhan9)
-- Frontend Mentor - [@vinhyan](https://www.frontendmentor.io/profile/vinhyan)
-
+- [LinkedIn](https://www.linkedin.com/in/vinhnhan126/)
+- [Twitter](https://twitter.com/vinhnhan9)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/vinhyan)
