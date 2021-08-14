@@ -10,7 +10,7 @@ import logoLight from "../logo-light.svg";
 
 const Footer = () => {
   return (
-    <StyledFooter role="contentinfo">
+    <StyledFooter>
       <div className="call-to-action">
         <h2>Sign up and Scoot off today</h2>
         <div className="app-download">
@@ -58,7 +58,7 @@ const Footer = () => {
         <Link to="/">
           <img id="logo-light" src={logoLight} alt="logo" />
         </Link>
-        <nav role="navigation" aria-labelledby="secondary">
+        <nav >
           <ul>
             <li>
               <Link to="/scoot/about">About</Link>

@@ -24,7 +24,7 @@ const Nav = () => {
 
   return (
     <>
-      <StyledNav>
+      <StyledNav navActive={navActive}>
         <img
           className="toggle-nav"
           onClick={() => setNavActive(!navActive)}
@@ -36,8 +36,6 @@ const Nav = () => {
         </Link>
         <nav
           className={`${navActive ? "active" : ""}`}
-          role="navigation"
-          aria-labelledby="primary"
         >
           <ul>
             <li>
@@ -129,6 +127,9 @@ const StyledNav = styled.header`
   @media (max-width: 730px) {
     justify-content: center;
     min-height: 64px;
+    position: ${(props) => (props.navActive ? "sticky" : "relative")};
+    top: 0;
+    width: 100%;
 
     .toggle-nav {
       position: absolute;
@@ -144,14 +145,14 @@ const StyledNav = styled.header`
 
     nav {
       width: 256px;
-      position: absolute;
+      position: fixed;
       flex-direction: column;
       top: 64px;
       left: 0;
       transform: translate(-100%);
       height: calc(100vh - 64px);
       background-color: #333a44;
-      padding: 64px 32px 24px 32px;
+      padding: 64px 32px 94px 32px;
       justify-content: space-between;
       transition: all 0.5s ease-in;
 
