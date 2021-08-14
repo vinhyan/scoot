@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <main role="main">
+      <main>
         <Switch>
           <Route path="/scoot" exact>
             <Home />

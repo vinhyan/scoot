@@ -58,7 +58,7 @@ const Footer = () => {
         <Link to="/">
           <img id="logo-light" src={logoLight} alt="logo" />
         </Link>
-        <nav >
+        <nav aria-labelledby="secondary">
           <ul>
             <li>
               <Link to="/scoot/about">About</Link>
