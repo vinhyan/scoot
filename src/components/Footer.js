@@ -55,7 +55,7 @@ const Footer = () => {
         </svg>
       </div>
       <StyledNav>
-        <Link to="/">
+        <Link to="/scoot">
           <img id="logo-light" src={logoLight} alt="logo" />
         </Link>
         <div className="nav" role="navigation">
