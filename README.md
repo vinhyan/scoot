@@ -57,7 +57,7 @@ Users should be able to:
 2. Create reusable components with React:
 
 - I like creating components that can be reused throughout the project. Passing data through props without having to re-write HTML tags and classes saved me lots of time.
-- Below is a reusable component which elements' position can be reversed (for styling purposes) by passing props:
+- Below is a reusable component I created which allow elements' position to be reversed (for styling purposes), with or without button and personalized button's content, all can be done by passing props:
 
 ```
 const Card = ({
@@ -100,13 +100,13 @@ const Card = ({
 
 4. Accessibility:
 
-- Use specific tags or add landmarks, aria-labelledby and aria-label to the tags throgughout the project to help with all screen readers
+- Use specific tags or add landmarks such as `role`, `aria-labelledby` and `aria-label` to the tags throughout the project for accessibility.
 
 ### Continued development
 
-- Learned how to break down the project into small reusable components more efficiently
+- Learn how to break down the project into small reusable components more efficiently
 - Explore more features of Styled Components
-- Learned how to use AnimateSharedLayout from Framer Motion (I initially added this to FAQ section, however it did not work the way I wanted)
+- Learn how to use AnimateSharedLayout from Framer Motion (I initially added this to FAQ section, however it did not work the way I wanted)
 - Be more aware of accessibility issues and HTML validations
 
 ## Author
